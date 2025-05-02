@@ -1,0 +1,21 @@
+.product-detail-container > .PDC{
+    display: grid;
+    grid-template-areas: "img info";
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: 500px;
+}
+.product-img{
+    grid-area: img;
+}
+.product-info{
+    grid-area: info;
+}
+@media screen and (max-width : 650px){
+    .product-detail-container > .PDC {
+        display: flex;
+        flex-direction: column;
+    }
+    .product-img{
+        height: 500px;
+    }
+}

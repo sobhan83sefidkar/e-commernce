@@ -1,0 +1,118 @@
+.comment-section{
+    display: grid;
+    grid-template-areas: "inputs comments";
+    grid-template-columns: 350px 1fr;
+    grid-template-rows: 400px;
+}
+.comment-input{
+    grid-area: inputs;
+    border-radius: 10px;
+box-shadow:  9px 9px 18px #c8c3b0;
+}
+.show-comment{
+    grid-area: comments;
+    box-shadow: inset 5px 5px 10px #d8d4c6,
+            inset -5px -5px 10px #d8d4c6;
+}
+
+.rating {
+    display: inline-block;
+  }
+  
+  .rating input {
+    display: none;
+  }
+  
+  .rating label {
+    float: right;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .rating label:before {
+    content: "\2605";
+    font-size: 30px;
+  }
+  
+  .rating input:checked ~ label,
+  .rating label:hover,
+  .rating label:hover ~ label {
+    color: #ffd700;
+    transition: color 0.3s;
+    
+  }
+  
+
+  .send-comment {
+    direction: ltr;
+    font-family: inherit;
+    font-size: 20px;
+    background: royalblue;
+    color: white;
+    padding: 0.4em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+  
+  .send-comment span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .send-comment svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .send-comment:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+  }
+  
+  .send-comment:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+  }
+  
+  .send-comment:hover span {
+    transform: translateX(5em);
+  }
+  
+  .send-comment:active {
+    transform: scale(0.95);
+  }
+  
+  @keyframes fly-1 {
+    from {
+      transform: translateY(0.1em);
+    }
+  
+    to {
+      transform: translateY(-0.1em);
+    }
+  }
+  
+  .comment-title::before{
+    content: "";
+    width: 300px;
+    height: 5px;
+    background-color: rgb(163, 130, 110);
+    position: absolute;
+    bottom: -10px;
+    border-radius: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @media screen and (max-width : 750px){
+    .comment-section{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+  }

@@ -1,0 +1,16 @@
+.parallax{
+    background-image: url(../../../public/images/parallax.jpg);
+    background-position: left;
+    background-size: cover;
+    object-fit: cover;
+    background-attachment: fixed;
+    border-radius: 10px;
+    position: relative;
+}
+.follow-instagram{
+    transition: 0.3s;
+}
+.follow-instagram:hover{
+    background-color: rgb(218,186,151);
+    color: black;
+}

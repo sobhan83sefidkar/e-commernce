@@ -1,0 +1,19 @@
+.before{
+    transform: perspective(1000px) rotateY(-45deg) translateX(150%);
+    transition: 0.5s;
+    opacity: 0.2;
+}
+.active{
+    transform: translateX(0);
+    transition: 0.5s;
+}
+.after{
+    transform: perspective(1000px) rotateY(45deg) translateX(-150%);
+    transition: 0.5s;
+    opacity: 0.2;
+}
+@media screen and (max-width : 636px){
+    .before , .after {
+        opacity: 0;
+    }
+}

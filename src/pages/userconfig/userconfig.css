@@ -1,0 +1,9 @@
+.user-config-container{
+    display: grid;
+    grid-template-areas: "dashbord setting";
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: auto;
+}
+.setting{
+    grid-area: setting;
+}

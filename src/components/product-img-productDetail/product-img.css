@@ -1,0 +1,37 @@
+/* .active1{
+    transform: translateY(-50px) perspective(1000px) rotateY(45deg);
+    transition: 0.5s;
+    z-index: 2;
+}
+.before1{
+    transform: translateX(-100px) perspective(1000px) rotateY(45deg);
+    transition: 0.5s;
+    z-index: 1;
+}
+.after1{
+    transform: translateX(100px) perspective(1000px) rotateY(45deg);
+    transition: 0.5s;
+    z-index: 3;
+}
+.product-img-item:active{
+    transform: scale(2) translateX(50%) translateY(50%);
+} */
+.card {
+    width: 300px;
+    height: 370px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 -7px 6px 0 rgba(0, 0, 0, 0.1);
+    position: absolute;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    cursor: pointer;
+}   
+
+/* حالت کارت کلیک‌شده */
+.card.clicked {
+    transform: scale(1.2);
+    /* بزرگ‌تر شدن کارت */
+    opacity: 0;
+    /* محو شدن کارت */
+
+}
