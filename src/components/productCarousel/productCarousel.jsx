@@ -83,7 +83,7 @@ function ProductCarousel({ items, title, side, imgSrc }) {
                                 <div onMouseLeave={() => setHovering(false)} onMouseEnter={() => {
                                     setHovering(true)
                                     setCounter(0)
-                                }} key={i} className="product-item min-w-[215px] max-w-[215px] smmax:min-w-[170px] smmax:max-w-[170px] h-[250px] bg-white overflow-hidden snap-center rounded-md">
+                                }} key={i} className="product-item translate-x-5 min-w-[215px] max-w-[215px] smmax:min-w-[170px] smmax:max-w-[170px] h-[250px] bg-white overflow-hidden snap-center rounded-md">
                                     <div className="product-item-container w-full h-full relative flex flex-col gap-4 justify-center items-center">
                                         <span className="product-name absolute top-[70px] font-bold">{item.name}</span>
                                         <img className=" img-product absolute" src={item.img} alt="" />
